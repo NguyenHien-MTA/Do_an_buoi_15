@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>
+        .navigation{
+           
+            background-color:#060D17;
+            margin:auto;
+            height: 4000px;
+            width: 1500px;
+            color:#00BFFD;
+           
+        }
+        .menu{
+           
+            height:100px;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            
+
+        }
+       .status-icon{
+           color: red;
+       }
+       .menu-item{
+           height: 100px;
+           float:left;
+           background-color:#11273E;
+           width: 1140px;
+           margin-left: -15px;
+           
+       }
+       .container{
+           position: relative;
+           top:-200px;
+           background-color:#03060B;
+           height: 2450px;
+           color:white;
+           padding-right: -15px;
+           padding-left: -15px;  
+       
+       }
+       li{
+            list-style-type: none;
+            float:left;
+            padding:30px;
+          
+           
+        }
+        
+            
+        ul li a:hover{
+            background-color: aliceblue;
+        }
+        .group-buttons{
+            position: relative;
+            float:right;
+            height:100px;
+            width: 1140px;
+            margin-right: -15px;
+
+        }
+        .btn-group{
+            position: relative;
+            float:right;
+            top:30px;
+
+        }
+        .clearfix{
+            display: block;
+            clear: both;
+            content:"";
+        }
+        .content{
+            position: relative;
+            height:900px;
+        }
+        .card{
+            position: relative;
+            margin:10px;     
+        }
+        .slide{
+            position: relative;
+            height: 800px;
+            
+        }
+        .prev{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            background-color: #00BFFD;
+           border-radius: 100%;
+           }
+           
+       .next1{
+            position: absolute;
+            right: 0;
+            top:50%;
+            background-color: #00BFFD;
+           border-radius: 100%;
+           }
+          
+    </style>
+    
+</head>
+<body>
+    <div class="navigation">
+        <nav class="menu">
+            <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\logo.png" style="margin-left: 0px;">
+                <a href="##">
+                     <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\home.png"> Home  
+                </a>  
+                <a href="###" >
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\gamecata.png"> Thể loại game</a>
+                <input type="text" class="myinput" placeholder="Search for names.." style="margin-right: 100px;width: 300px; background-color: #11273E; border: none;
+                border-radius: 10px;" >                    
+                <button class="btn btn-outline-primary btn-sm " style="margin-left:50px;">
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\download.png" height="10"> Tải phần mềm
+                    
+                </button>
+                <button class="btn btn-outlight-light btn-sm" >
+                   <img src="E:\java_web_t3h\Do_an_buoi_15\ljava1909\Homework\icon\account.png"> <span class="font" style="color:#00BFFD">My Account</span>
+                </button>
+                <button class=" btn btn-outlight-light btn-sm">
+                    <i class='fas fa-cart-plus' style="color: #00BFFD;"></i> 
+                    <span style="color:#00BFFD; position: relative;">Giỏ hàng
+                           <button style="position:relative; top:0px; right: 5px; border-radius: 100%; width: 20px; height:20px; border: none; background-color: #FF3B09;">1</button>
+                    </span>
+                </button>     
+        </nav>
+        <div class="slide">
+             <img class="card-img-top" src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\bg.png" alt="Card image" style="width: 1500px;">
+                 <div class="card-img-overlay" style="color: white; position: absolute; top:360px; left:230px">
+                     <h1 class="card-title">METAL GEAR RISING REVENGEANCE</h1>
+                     <h3 class="card-text">Meta Gear Rising Revengeance là một game hành dộng chặt chém( hack và slash) được<br>phát triển bởi Platium Game và sản xuất bởi kojima Production.</h3>
+                     <a href="#" class="btn btn-primary btn-lg" style="width:180px;">Chi  tiết</a>
+                </div>
+                <div class="icons" style="position: absolute;top:500px;right:0px">
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\tutorial.png">
+                    <br>hướng dẫn<br>
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\messenger.png"><br> hỗ trợ
+                </div>
+         
+        </div>
+        <div class="container">
+            <div class="menu-item">
+                <ul class="list-menu-item" class="clearfix">
+                    <li> <a href="###" >GAME PLATFORM</a></li>
+                    <li><a href="####"><img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\steam.png"> Stream</a></li>
+                    <li><a href="####"><img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\Origin.png" >Orgin</a></li>
+                    <li><a href="####"><img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\Uplay-icon.png">Uplay</a> </li>
+                    <li><a href="####"><img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\Ubisoft_logo.png" >Ubiisorf</a></li>
+                    <li><a href="####"><img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\gog.png">GOG</a> </li>
+                    <li><a href="####"> <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\Blizzard-logo.png" >Blizzard</a></li>
+                </ul>
+            </div>
+            <div class="group-buttons" class="clearfix">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary btn-lg">Sắp xếp theo</button>
+                    <button type="button" class="btn btn-drimary dropdown-toggle btn-lg" data-toggle="dropdown"> Mặc định </button>      
+                </div>
+            </div>
+
+            <div class="content">
+               <div class="row my-9 ">
+                    <div class="col-md-4" style="position: relative;">
+                    
+                            <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="">  
+                            <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>Battelground </strong>
+                                  <br>
+                                   <del>450.000VND</del><br>
+                                <h6> 200.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                
+                                    <button style=" background-color:#0D374E; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                                <div>
+                                    <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color: #FF3B09;">-20%</button>
+                                </div>
+                            </div>  
+                      </div>
+                    
+                     <div class="col-md-4">
+                         
+                                <img class="card-img-top" src="https://genknews.genkcdn.vn/2018/3/7/photo-2-15204400985301027185729.jpg" alt="Card image">
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>god of war </strong>
+                                          
+                                            <h6>
+                                         350.000 VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                          
+                                            <button style=" background-color:#0D374E; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                       
+                                    </div>  
+                            </div>  
+                  
+                     <div class="col-md-4">
+                         
+                                <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>buffter acb</strong>
+                                          
+                                           <br>
+                                            <del>600.000VND</del>
+                                            <h6>250.000VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                         
+                                            <button style=" background-color:#0D374E; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                        <div>
+                                            <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color: #FF3B09;">-50%</button>
+                                        </div>
+                                    </div>  
+                      
+                     </div>
+                    </div>   
+                   <div class="row my-9 " style="position: relative; top: 30px;">    
+                     <div class="col-md-4">
+                     
+                                <img class="card-img-top" src="https://genknews.genkcdn.vn/2018/3/7/photo-2-15204400985301027185729.jpg" alt="Card image">
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>candy </strong>
+                                          <br>
+                                            
+                                            <del>600.000VND</del>
+                                            <h6>180.000VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                                <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                         
+                                            <button style=" background-color:#006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                        <div>
+                                            <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-70%</button>
+                                        </div>
+                                    </div>             
+                            
+                     </div>    
+                     <div class="col-md-4">
+                          
+                                <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">     
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>Battelground </strong>
+                                          
+                                            <h6>
+                                        400.000 VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                            
+                                            <button style=" background-color: #0D374E; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                       
+                                    </div>  
+                        
+                     </div>
+                     <div class="col-md-4">
+                          
+                                <img class="card-img-top" src="https://genknews.genkcdn.vn/2018/3/7/photo-2-15204400985301027185729.jpg" alt="Card image">      
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>Battelground </strong>
+                                          
+                                           <br>
+                                            <del>234.000VND</del>
+                                            <h6>176.000</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                         
+                                            <button style=" background-color:#006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                        <div>
+                                            <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-20%</button>
+                                        </div>
+                                    </div>                       
+                         
+                     </div> 
+                   </div>   
+                 <div class="row my-9 "  style="position: relative; top: 60px;">   
+                     <div class="col-md-4">
+                           
+                                <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">  
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>god of war </strong>
+                                            <br>
+                                          
+                                            <h6>
+                                         300.000 VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                          
+                                            <button style=" background-color:#0D374E; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                    
+                                    </div>          
+                      
+                     </div>
+                     <div class="col-md-4">
+                          
+                                <img class="card-img-top" src="https://genknews.genkcdn.vn/2018/3/7/photo-2-15204400985301027185729.jpg" alt="Card image">  
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>laddi mup </strong>
+                                            <br>
+                                          
+                                            <h6>1000.000 VND <br>
+                                         800.000 VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                         
+                                            <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                        <div>
+                                            <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-70%</button>
+                                        </div>
+                                    </div>                           
+                   
+                     </div>    
+                     <div class="col-md-4">
+                    
+                                <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                                <div class="card-img-overlay" clearfix>
+                                        <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                            <strong>chicken salad </strong>
+                      
+                                            
+                                            <h6>350.000 VND <br>
+                                         200.000 VND</h6>
+                                       </div>
+                                        <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                          
+                                            <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                        </div>
+                                        <div>
+                                            <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-70%</button>
+                                        </div>
+                                    </div>  
+                             
+                
+                     </div>
+
+               </div>
+            </div>
+               <div class="next-page" style="height: 100px;padding:10px;position: relative;margin-left: 320px; ">
+                <button style="height: 50px; width: 50px; background-color:#006BD9; border-radius: 10px;border: none;">1</button>
+                <button style="height: 50px; width: 50px; background-color:#006BD9; border-radius: 10px;border: none;">2</button>
+                <button style="height: 50px; width: 50px; background-color:#006BD9; border-radius: 10px;border: none;">3</button>
+                <button style="height: 50px; width: 50px; background-color:#006BD9; border-radius: 10px;border: none;">4</button>
+               <button class="btn btn-outlight-light" style="height: 50px; width: 50px;font-size: 20px;color: cornsilk;">...</button>
+                <button style="height: 50px; width: 50px; background-color:#006BD9; border-radius: 10px;border: none;">16</button>
+                <button style="height: 50px; width: 80px; background-color:#006BD9; border-radius: 10px;border: none;">next</button>
+
+
+               </div>
+               <div class="menu 2" style="height: 100px;width: 100%; padding:10px ; background-color: #0D1E30;">
+                   <ul style="height: 60px;">
+                       <li><a href=""> TOP GAME THUÊ NHIỀU</a></li>
+                       <li><a href=""> TOP GAME MỚI ĐƯỢC THUÊ</a></li>
+                       <li><a href="">TOP GAME MỚI NHẤT</a></li>
+
+                   </ul>
+               </div>
+               <div  class="slide2" style="position: relative ;top:50px">
+                   <img src="https://i.ytimg.com/vi/b9dlPbZKOjQ/maxresdefault.jpg" width="100%">
+                   <div class="card-img-overlay" style="position: absolute ;top:400px; font-size: 25px;" >
+                       <h1> The Witcher 3 Special Edition</h1>
+                       <p>Metal Gear Rising Revengeance là một game hành đọng cặt chém( hack và <br> slash) được phát triển bởi platium Game và sản xuất bởi Kojima</p>
+
+                   </div>
+                  <div class="prev">
+                      <img src="https://cdn1.iconfinder.com/data/icons/basic-arrow/512/Artboard_22-512.png" height="60px" width="60px">
+                  </div>
+                  <div class="next1" >
+                      <img src="https://cdn1.iconfinder.com/data/icons/basic-arrow/512/Artboard_21-512.png" height="60px" width="60px">
+                  </div>
+               </div>
+               <div class="main-content" style="position: relative; top:100px; height:500px ">
+               <div class="row my-9" style="position: relative; ">
+                   <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>ywgdiuwdiue </strong>
+                                  
+                                    <h6>400.000 VND 
+                                </h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                    
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                              
+                            </div>  
+                   </div>
+                   <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>jung mun</strong>
+                                  
+                                    <h6>400.000 VND <br>
+                                 340.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                   
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                                <div>
+                                    <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-70%</button>
+                                </div>
+                            </div>  
+                   </div>
+                   <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>kim tan </strong>
+                                  
+                                    <h6>
+                                 100.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                    
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                               
+                            </div>  
+                   </div>          
+        </div>
+      
+
+        <div class="row my-9" style="position: relative;top:30px">
+                <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>Buckvftvd </strong>
+                                  
+                                    <h6>500.000 VND <br>
+                                 200.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                    
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                                <div>
+                                    <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-70%</button>
+                                </div>
+                            </div>  
+                </div>
+                <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>ewfiewavr </strong>
+                                  
+                                    <h6>400.000 VND <br>
+                                 200.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                        <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+
+                                  
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                                <div>
+                                    <button style="position: absolute; top:0px; right: 15px; border-radius: 2px; width: 50px; height:30px; border: none; background-color:  #FF3B09;">-50%</button>
+                                </div>
+                            </div> 
+                         </div>
+                <div class="col-md-4">
+                        <img class="card-img-top" src="https://toplist.vn/images/800px/ngo-khong-197400.jpg" alt="Card image">
+                        <div class="card-img-overlay" clearfix>
+                                <div class="left" style="height: 60px; float: left; position: relative;top:90px;left:10px;font-size: 10;">
+                                    <strong>ùehiureagf </strong>
+                                  
+                                    <h6>
+                                 200.000 VND</h6>
+                               </div>
+                                <div class="right " style="float: right; height: 60px; position: relative;top:140px;right:5px">
+                                      <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_webpict35_1484337167-1.png" height="50px" width="40px" >
+                                    <button style=" background-color: #006BD9; border: none; width:120px; border-radius: 2px; height: 30px;">Thêm giỏ hàng</button>
+                                </div>
+                              
+                            </div>  
+                </div>          
+     </div>
+    
+    </div>
+        
+    <div class="next" clearfix style=" position: relative; top:100px;height: 100px; font-size: 40px; color: #006BD9; float:right"> xem tiếp >></div>
+        </div>
+        <div class="footer" clearfix  style="height:300px;position: relative; width:1140px;font-size: 15px;color: #006BD9; padding :0px;margin:auto;top:"  >
+            
+            <div class="footer-left" style="float: left; margin-right: 50px; position: relative; margin-left: 30px;">
+                <span style="color: aliceblue;"> Thông tin</span>
+                <p> Giới thiệu về Divine Shop
+                    <br> Game bản quyền là gì ?
+                    <br> Chính sách bảo mật
+                    <br> điều khoản dịch vụ
+                </p>
+                
+                
+            </div>
+            <div class="footer-mid 1" style="float: left; margin-right: 50px; position: relative;">
+                <span style="color: aliceblue;"> Chính sách chăm sóc khách hàng</span>
+                <p> Liên hệ 
+                    <br>Chế độ bảo hành
+                </p>
+            </div>
+            <div class="footer-mid 2" style="float: left; margin-right: 50px; position: relative;">
+                <span style="color: aliceblue;">Liên hệ</span>
+                <p>Địa chỉ: 1060 Đường láng-Đống đa-Hà nội
+                    <br> Hotline:0962915988
+                    
+                </p>
+                <p> Kết nối
+                    <br><br>
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\facebook.png" height="20px" width="20px">
+                   
+                    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\google.png" height="20px" width="20px">
+                </p>
+
+            </div>
+            <div class="footer-right">
+                <img src="https://i.pinimg.com/originals/7a/19/c3/7a19c3d0f979d27437ec7ae56a48d284.jpg" height="150px" width="170px" >
+            </div>
+            <br><br>
+            <hr style="background-color: aqua;">
+            <br><br>
+            <p>@ copyright2018nguyenngocanh</p>
+        </div>
+      
+       <br><br>
+     
+        </div>
+        
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
