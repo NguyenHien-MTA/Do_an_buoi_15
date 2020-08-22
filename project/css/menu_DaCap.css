@@ -1,0 +1,26 @@
+
+    .cap1 li {
+        display: block;
+        width: 150px;
+        border: 1px solid black;
+        padding: 10px 20px 10px 20px;
+        margin-left: -5px;
+        background-color: pink;
+    }
+    .cap1 li:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+    .cap2 {
+        display: none;
+        position: absolute;
+        list-style: none;
+        top: 38px;
+        left: -36px;
+    }
+    .quanaonam {
+        position: relative;
+    }
+    .quanaonam:hover .cap2{
+        display: block;
+    }

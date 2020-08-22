@@ -11,8 +11,9 @@
 	<title> ĐỒ ÁN FRONTEND </title>
 	<!-- nhung thu vien bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/search.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/Validate.css">
 	<style type="text/css">
 		.offer-text{
 			position: absolute;
@@ -50,7 +51,26 @@
 			border-radius: 5px;
 		}
 
-		
+
+    .cap1 li {
+        display: block;  
+    }
+    .cap1 li:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+    .cap2 {
+        display: none;
+        list-style: none;
+    }
+    .showMenu {
+        position: relative;
+    }
+    .showMenu:hover .cap2{
+        display: block;
+    }
+
+	
 	</style>
 </head>
 <body>
@@ -63,9 +83,6 @@
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-
 		  	<form class="form-inline my-2 my-lg-0 w-100">
 	<!--	      <input class="form-control mx-sm-3 w-100" type="search" placeholder="Bạn tìm gì..." aria-label="Search for..." id="myInput" onkeyup="myFunction() >   -->
 			    <div class="dropdown">
@@ -101,8 +118,10 @@
 		          <a class="dropdown-item" href="#">Trang cá nhân</a>
 		          <a class="dropdown-item" href="#"> Cài đặt</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal"> Đăng kí</a>
-		          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#singinModal"> Đăng nhâp</a>
+		          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal"> Đăng nhập </a>
+		          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#s
+
+		          inginModal"> Đăng kí </a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> Đăng xuất </a>
 		        </div>
@@ -170,34 +189,40 @@
 		<div class="row my-3">
 			<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
 				<ul class="list-group">
-				  <li class="list-group-item bg-danger text-white"> IPHONE <span class="badge badge-pill badge-primary float-right">290</li>
-				  <li class="list-group-item bg-danger text-white"> OPPO <span class="badge badge-pill badge-primary float-right">80</li>
-				  <li class="list-group-item bg-danger text-white"> XIAOMI <span class="badge badge-pill badge-primary float-right"> 50 </li>
-				  <li class="list-group-item bg-danger text-white"> VIVO <span class="badge badge-pill badge-primary float-right">30</li>
+				  <li class="list-group-item bg-danger text-white"> IPHONE <span class="badge badge-pill badge-info float-right">290</li>
+				  <li class="list-group-item bg-danger text-white"> OPPO <span class="badge badge-pill badge-info float-right">80</li>
+				  <li class="list-group-item bg-danger text-white"> XIAOMI <span class="badge badge-pill badge-info float-right"> 50 </li>
+				  <li class="list-group-item bg-danger text-white"> VIVO <span class="badge badge-pill badge-info float-right">30 </li>
 				</ul>
 
 				<ul class="list-group my-3">
 				  <li class="list-group-item active bg-success"> HUAWEI</li>
-				  <li class="list-group-item active bg-success"> realme <span class="badge badge-pill badge-danger float-right">50</span></li>
-				  <li class="list-group-item active bg-success"> VsMART <span class="badge badge-pill badge-danger float-right">119</li>
-				  <li class="list-group-item active bg-success"> NOKIA <span class="badge badge-pill badge-danger float-right">100</li>
-				  <li class="list-group-item active bg-success"> mobell <span class="badge badge-pill badge-danger float-right"> 700 </li>
+				  <li class="list-group-item active bg-success"> realme <span class="badge badge-pill badge-info float-right">50  </span></li>
+				  <li class="list-group-item active bg-success"> VsMART <span class="badge badge-pill badge-info float-right">119  </li>
+				  <li class="list-group-item active bg-success"> NOKIA <span class="badge badge-pill badge-info float-right">100 </li>
+				  <li class="list-group-item active bg-success"> mobell <span class="badge badge-pill badge-info float-right"> 700 </li>
 				</ul>
 
 				<ul class="list-group my-3">
 				  <li class="list-group-item bg-info text-white"> itel </li>
-				  <li class="list-group-item bg-info text-white"> coolpad <span class="badge badge-pill badge-success float-right">110</span></li>
-				  <li class="list-group-item bg-info text-white"> ASUS <span class="badge badge-pill badge-success float-right">200</li>
-				  <li class="list-group-item bg-info text-white"> BlackBerry <span class="badge badge-pill badge-success float-right">119</li>
-				  <li class="list-group-item bg-info text-white"> mobiistar<span class="badge badge-pill badge-success float-right">100</li>
+				  <li class="list-group-item bg-info text-white"> coolpad <span class="badge badge-pill badge-info float-right"> 110 </span></li>
+				  <li class="list-group-item bg-info text-white"> ASUS <span class="badge badge-pill badge-info float-right"> 200  </li>
+				  <li class="list-group-item bg-info text-white"> BlackBerry <span class="badge badge-pill badge-info float-right"> 119 </li>
+				  <li class="list-group-item bg-info text-white"> mobiistar<span class="badge badge-pill badge-info float-right"> 100 </li>
 				</ul>
 
-				<ul class="list-group my-3">
-				  <li class="list-group-item list-group-item-primary"><a href="#">Dưới 2 triệu </a></li>
-				  <li class="list-group-item list-group-item-secondary"><a href="#"> Từ 2 triệu - 7 triệu </a> </li>
-				  <li class="list-group-item list-group-item-success"><a href="#"> Từ 7 triệu - 13 triệu </a></li>
-				  <li class="list-group-item list-group-item-danger"><a href="#"> Trên 13 triệu </a> </li>
-				</ul>
+				
+
+				<ul class="cap1 list-group ">
+                <li class="showMenu list-group-item list-group-item-info"> Tìm kiếm theo giá...
+                     <ul class=" cap2 list-group my-3">
+						  <li class="list-group-item list-group-item-primary">Dưới 2 triệu </li>
+						  <li class="list-group-item list-group-item-secondary"> Từ 2 triệu - 7 triệu  </li>
+						  <li class="list-group-item list-group-item-success"> Từ 7 triệu - 13 triệu </li>
+						  <li class="list-group-item list-group-item-danger"> Trên 13 triệu  </li>
+						</ul>
+		                </li>
+       				 </ul>
 			</div>
 			<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
 				<nav aria-label="breadcrumb">
@@ -259,7 +284,7 @@
 						  <div class="card-body">
 						    <h5 class="card-title text-center">iPhone Pro Max 64G </h5>
 						    <p class="card-text text-center"> Giá: 33.990.000</p>
-						    <p class="card-text text-center" style="color: red"> Hàng Sắp Về<br><i>Đặt trước đến 17/10<br> Hỗ trợ mua trả góp 0%</i></p>
+						    <p class="card-text text-center" style="color: red"> <br><i>Đặt trước đến 17/10<br> Hỗ trợ mua trả góp 0%</i></p>
 						    <p class="text-center">
 						    	<a href="#" class="btn btn-primary">Buy now</a>
 						    	<a href="#" class="btn btn-success">Add cart</a>
@@ -442,7 +467,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class="container-fluid bg-primary">
+	<footer class="container-fluid bg-primary py-3">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				<p class="text-center text-white pt-3">© 2019 |   All Rights Reserved |   www.MyPhone.com  |   Email us:MyPhoneT3H@gmail.com</p>
@@ -461,14 +486,16 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        <form>
+	        <form class="login_form" method="post" name="form" onsubmit="return validated()">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Email address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <div id="email_error"> Please fill up your Email </div>
 					  </div>
 					  <div class="form-group">
 					    <label for="exampleInputPassword1">Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					    <input type="password" name="password" class="form-control" id="pass" placeholder="Password">
+					     <div id="pass_error"> Please fill up your Password </div>
 					  </div>
 					  <div class="form-group form-check">
 					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -482,12 +509,12 @@
 	  </div>
 	</div>
 
-	<!-- Modal sing in -->
+	<!-- Modal sign in -->
 	<div class="modal fade" id="singinModal" tabindex="-1" role="dialog" aria-labelledby="singinModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Sing in</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -572,5 +599,6 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/Validate.js"></script>
 </body>
 </html>
