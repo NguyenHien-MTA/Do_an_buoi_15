@@ -45,16 +45,19 @@ $(document).ready(function(){
         $("#s5").css("color", "chocolate");
         $("#text").text("Rất tuyệt vời").css("display","inline-block")
      });
+    
     $(".star").mouseout(function(){
-        $(".star").css("color","black")
+		var isChocolate = $(this).attr("isChocolate");
+		if (isChocolate != "chocolate") {
+			$(".star").css("color","black")
+		}
         $("#text").css("display","none")
     })
-    $(".star").on("click",function(){
-        $(this).css("color","chocolate")
-    })
+	
     // đặt sự kiện onclick để cho ý kiến đánh giá
     $(".star").on("click",function(){
-        $("star").css("color", "chocolate");
+		$(this).attr("isChocolate", "chocolate");
+        $(this).css("color", "chocolate");
         $(".cmt").show()
     })
 })
