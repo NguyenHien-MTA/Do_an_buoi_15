@@ -1,5 +1,11 @@
+.login_form #user_error,
 .login_form #email_error,
-.login_form #pass_error{
+.login_form #pass_error,
+.login_form #confirm_error, 
+.login_form #addr1_error,
+.login_form #addr2_error,
+.login_form #phone_error,
+.login_form1 #pass_error1{
 	margin-top: 5px;
 	width: auto;
 	font-size: 18px;

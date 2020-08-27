@@ -20,6 +20,7 @@
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 #myInput:focus {outline: 3px solid #ddd;}
@@ -46,6 +47,6 @@
   display: block;
 }
 
-.dropdown a:hover {background-color: #6FA249 ;}
+.dropdown a:hover {background-color:  #a8a8a8; color: white  ;}
 
 .show {display: block;}

@@ -1,11 +1,43 @@
+.offer-text{
+    position: absolute;
+    background-color: red;
+    padding: 8px 5px;
+    margin: 5px 0px;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+}
+.small-box{
+    font-size: 10px;
+    margin: 3px 0px;
+}
+.small-box a {
+    color:  #808080;
+    padding: 0px 2px;
+}
+@media (max-width: 767px) {
+.my-mt-3 {
+    margin-top:20px;
+}
+}
+img {
+     image-rendering: pixelated;
+}
+.carousel-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  
+}
+a:hover{
+    background-color:  #a8a8a8;
 
+    border-radius: 5px;
+}
+
+/* menu da cap */
     .cap1 li {
-        display: block;
-        width: 150px;
-        border: 1px solid black;
-        padding: 10px 20px 10px 20px;
-        margin-left: -5px;
-        background-color: pink;
+        display: block;  
     }
     .cap1 li:hover {
         cursor: pointer;
@@ -13,14 +45,11 @@
     }
     .cap2 {
         display: none;
-        position: absolute;
         list-style: none;
-        top: 38px;
-        left: -36px;
     }
-    .quanaonam {
+    .showMenu {
         position: relative;
     }
-    .quanaonam:hover .cap2{
+    .showMenu:hover .cap2{
         display: block;
     }

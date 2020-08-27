@@ -21,3 +21,6 @@ function filterFunction() {
 function dieu_huong(){
 	location.assign("http://webcoban.vn");
 }
+function detailSP(){
+	location.assign("http://webcoban.vn");
+}
