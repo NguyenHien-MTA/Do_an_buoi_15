@@ -158,5 +158,9 @@ $(document).ready(function(){
      $('.fb').on('click',function(){
         location.assign("https://www.facebook.com/");
      })
+     $(".gp").on('click',function(){
+         location.assign('https://www.google.com.vn/')
+
+     })
 })    
 
