@@ -19,8 +19,20 @@ function filterFunction() {
 	}
 } 
 function dieu_huong(){
-	location.assign("http://webcoban.vn");
+	location.assign(" detail_product.html ");
 }
 function detailSP(){
-	location.assign("http://webcoban.vn");
+	location.assign("detail_product.html");
+}
+function dangKi(){
+	if (phone_Verify()) {
+	alert("Đăng kí thành công");
+	}
+}
+function dangXuat(){
+	alert("Đăng nhập lại để tham gia mua sản phẩm!!!")
+	location.assign("index.html");
+}
+function Tro_Giup(){
+	location.assign("feedback.html");
 }

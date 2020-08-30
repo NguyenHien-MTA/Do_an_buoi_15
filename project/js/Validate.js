@@ -144,18 +144,3 @@ function  phone_Verify(){
 		  return  true;
 	}
 }
-function dangKi(){
-	if (phone_Verify()) {
-	alert("Đăng kí thành công");
-	}
-}
-function dangXuat(){
-	alert("Đăng nhập lại để tham gia mua sản phẩm!!!")
-	location.assign("index.html");
-}
-
-
-
-
-
-
