@@ -42,7 +42,7 @@
 		      	</li>
 		      	<li class="nav-item active dropdown">
 		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          	<i class="fa fa-user-o fa-lg" ></i> Tài Khoản
+		          	<i class="far fa-user" style="size: 10px;"></i> Tài Khoản
 		        	</a>
 			        
 		      	</li>
@@ -53,7 +53,12 @@
 		    </ul>
 		  </div>
 		</div>
-	</nav>
+  </nav>
+  <div class="icons" style="position: absolute;top:60px;right:10px">
+    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\tutorial.png">
+    <br>hướng dẫn<br>
+    <img src="E:\java_web_t3h\Do_an_buoi_15\ljava2007\Homework\icon\messenger.png"><br> hỗ trợ
+</div>
     <div class="container" style=" font-size: 20px;">
         <div class="header">
             <div class="search">
@@ -140,7 +145,7 @@
                 <div class="clr"></div>
                 <div class="cmt" style="display: none;">
                     <div class="ct">
-                        <textarea name="fRContent" style="width:100%;height:200px;" placeholder="Nhập đánh giá về sản phẩm (tối thiểu 80 ký tự)" ></textarea>
+                        <textarea id="textbox" style="width:100%;height:200px;" placeholder="Nhập đánh giá về sản phẩm " ></textarea>
                         <div class="extCt">
                             <label><i class="fas fa-camera"></i>Đính kèm tệp</label>
                             <br>
@@ -149,10 +154,17 @@
                         </div>
                     </div>
                     <div class="if">
-                        <input class="name" style="width:46%" type="text" name="fRName" placeholder="Họ tên" />
-                        <input class="phone"style="width:46%" type="text" name="fRPhone" placeholder="Số điện thoại" />
-                        <input class="email"style="width:46%" type="text" name="fREmail" placeholder="Email" />
-                        <a href="####">GỬI ĐÁNH GIÁ</a>
+                      
+                        <div style="margin-left:100px;">
+                          <input id="name" style="width:76%;margin-top:7px; " type="text"  placeholder="Họ tên" />
+                          <p></p>
+                          <input id="phone"type="text"style="width:76%;"   placeholder="Số điện thoại" />
+                          <p ></p>
+                          <input id="email" type="email" style="width:76%;" placeholder="Email" />
+                          <p ></p>
+                          
+                          <a href="####" id="submit">GỬI ĐÁNH GIÁ</a>
+                        </div>
                     </div>
                     <div class="clr"></div>
                     <ul class="resImg hide">
@@ -166,7 +178,21 @@
         <button class="btn btn-outline-primary " id="hoidap2" style="height: 50px;width: 100px; display: none;">đóng lại</button>
 
     </div> 
-    <div class="container" id="Rep" style="display:none; height: 2800px;">
+     <div class="container" id="Rep" style="display:none; height: 1700px;">
+        <div class="topbarask">
+          <h1>Hỏi đáp về sản phẩm</h1>
+          
+          <div class="area_user">
+                  <a href="javascript:;" class="login">Đăng nhập</a>
+                  <div class="loginwith" style="display: none;   ">
+                      <p>Đăng nhập để đặt câu hỏi và tham gia bình luận bài viết</p>
+                      <a href="####" class="fb">  Đăng nhập bằng Facebook</a>
+                      <a href="####" class="gp">  Đăng nhập bằng Google</a>
+                  </div>
+          </div>
+    
+        </div>
+
         <aside class="ask_left">
       
           <!-- === col_topic -->
@@ -177,7 +203,7 @@
             <li>
                 <label>
                      <i class="iconask-android"></i>
-                    <h3><a href="#####3">Android</a></h3>
+                    <h3><a href="#####">Android</a></h3>
                 </label>
                     <div class="subtopic hide">
                         <a href="#######"> Khôi phục - Reset</a>
@@ -237,7 +263,7 @@
             
             <div class="ask_sp">
                   
-                <input name="key" id="search-Product" type="text" placeholder="Tìm sản phẩm" autocomplete="off"  maxlength="50" height="20px" >
+                <input name="key" id="search-Product" type="text" placeholder="Tìm sản phẩm" autocomplete="off"  maxlength="50" style="height: 40px;width:100%;">
               <div id="SuggestSearchProduct"></div>
             </div>    
             </div>
@@ -245,9 +271,10 @@
             <div class="col_content">
               
             <form class="search_ask" action="/hoi-dap/tim-kiem" >
-            <input type="text" id="txtKeysearch" name="key" autocomplete="off" placeholder="Tìm hướng dẫn, mẹo hay, câu hỏi, sản phẩm">
-            <button type="submit">Tìm kiếm</button>
-            <i class="iconask-searchask"></i>
+              <input class="key" type="text"  id="txtKeysearch" placeholder="Tìm ,mẹo hay,câu hỏi,đánh giá" >
+              <i class="fas fa-search" style="position: absolute; top: 17px;  left: 17px; width: 20px;   height: 20px; background-position: 0 0"></i>
+            <button type="submit" class="btn btn-outline-primary" style="position: absolutel; height: 35px;">Tìm kiếm</button>
+            
             <ul class="sugguest"></ul>
             <div class="trend">Tìm nhiều: <h1 dejavu="" h1="" liberation="" orphans:="" outline:="" overflow:="" style="margin: 0px; padding: 0px; font-stretch: normal; font-size: 20px; line-height: 1.3em; font-family: Helvetica, Arial, " widows:="" zoom:=""><span style="font-size:14px;"><a href="https://www.thegioididong.com/hoi-dap/ios-14-va-5-tinh-nang-moi-thu-vi-khong-the-bo-qua-tren-1268933">iOS 14</a>&nbsp;&nbsp;<a href="https://www.thegioididong.com/hoi-dap/huong-dan-cach-doi-ten-facebook-don-gian-nhanh-chong-va-1057852" target="_blank" title="https://www.thegioididong.com/hoi-dap/huong-dan-cach-doi-ten-facebook-don-gian-nhanh-chong-va-1057852" type="https://www.thegioididong.com/hoi-dap/huong-dan-cach-doi-ten-facebook-don-gian-nhanh-chong-va-1057852">Cách đổi tên Facebook</a>&nbsp; &nbsp;<a href="https://www.thegioididong.com/hoi-dap/cach-kiem-tra-imei-iphone-ipad-chinh-hang-apple-chinh-xac-650600" target="_blank" title="Cách kiểm tra IMEI iPhone iPad chính hãng Apple chính xác nhất" type="Cách kiểm tra IMEI iPhone iPad chính hãng Apple chính xác nhất">Kiểm tra IMEI iPhone, iPad</a>&nbsp;&nbsp;<a href="https://www.thegioididong.com/hoi-dap/cach-tao-gmail-don-gian-nhat-630752" target="_blank" title="Cách tạo Gmail đơn giản nhất" type="Cách tạo Gmail đơn giản nhất">Tạo Gmail</a>&nbsp;&nbsp;<a href="https://www.thegioididong.com/hoi-dap/cach-khoa-tai-khoan-facebook-tam-thoi-1046669" target="_blank" title="Cách khóa tài khoản Facebook tạm thời trên điện thoại, máy tính" type="Cách khóa tài khoản Facebook tạm thời trên điện thoại, máy tính">Khóa Facebook</a></span></h1></div>
         </form>
@@ -258,7 +285,7 @@
                 <li>
                     <a href="#####">
                         <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png">
-                        <h3>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h3>
+                        <h5>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h5>
                         <p>Đặt mật khẩu là một trong những bước đầu tiên để tạo tài khoản Gmail và vì một vài lý do mà bạn muốn thay đổi nó....</p>
                         <div>     
                             <label>iphone/ oppo / SamSung</label>
@@ -268,7 +295,7 @@
                 <li> 
                     <a href="#####">
                         <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/929045/Thumbnail/khac-phuc-loi-Bluetooth-tren-window10-0.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/929045/Thumbnail/khac-phuc-loi-Bluetooth-tren-window10-0.jpg">
-                        <h3>Cách bật, tắt Bluetooth trên máy tính Windows đơn giản, nhanh chóng</h3>
+                        <h5>Cách bật, tắt Bluetooth trên máy tính Windows đơn giản, nhanh chóng</h5>
                         <p>Bluetooth là tính năng được tích hợp sẵn trên các  laptop  giúp bạn có thể truyền file nhanh chóng từ điện thoại hay...</p>
                         <div>  
                             <label>iphone/ OPPO / SamSung</label>
@@ -278,7 +305,7 @@
                 <li> 
                     <a href="#####">
                         <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1283689/Thumbnail/huong-dan-cach-ket-noi-oppo-watch-series-voi-dien-thoai-thumb.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1283689/Thumbnail/huong-dan-cach-ket-noi-oppo-watch-series-voi-dien-thoai-thumb.jpg">
-                        <h3>Hướng dẫn cách kết nối OPPO Watch Series với điện thoại Android, iOS</h3>
+                        <h5>Hướng dẫn cách kết nối OPPO Watch Series với điện thoại Android, iOS</h5>
                         <p>Từ khi OPPO Watch được chính thức ra mắt tại Việt Nam đã thu hút rất nhiều sự quan tâm của các tín đồ công nghệ. Nếu...</p>
                         <div>   
                             <label>Đồng hồ thời trang</label>
@@ -288,7 +315,7 @@
                 <li>  
                     <a href="#####">
                         <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279535/Thumbnail/cach-chup-man-hinh-iphone-day-du-model-nhanh-chong-de-lam-thumb-1.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279535/Thumbnail/cach-chup-man-hinh-iphone-day-du-model-nhanh-chong-de-lam-thumb-1.jpg">
-                        <h3>Cách chụp màn hình iPhone: Đầy đủ model, nhanh chóng dễ làm</h3>
+                        <h5>Cách chụp màn hình iPhone: Đầy đủ model, nhanh chóng dễ làm</h5>
                         <p>Tính năng chụp màn hình cực kỳ hữu dụng đối với người dùng  điện thoại  bởi sự tiện lợi mà nó mang lại. Trong bài...</p>
                         <div>                         
                             <label>iPhone - iOS</label>
@@ -298,14 +325,98 @@
                 <li>      
                     <a href="####">
                         <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1282403/Thumbnail/cach-bat-tat-phan-chieu-man-hinh-iphone-len-tivi-nhanh-thumb-1.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1282403/Thumbnail/cach-bat-tat-phan-chieu-man-hinh-iphone-len-tivi-nhanh-thumb-1.jpg">
-                        <h3>Cách bật, tắt phản chiếu màn hình iPhone lên tivi nhanh chóng nhất</h3>
+                        <h5>Cách bật, tắt phản chiếu màn hình iPhone lên tivi nhanh chóng nhất</h5>
                         <p>Tính năng phản chiếu màn hình  iPhone  lên tivi giúp bạn có thể xem phim, video,... trên tivi một cách dễ dàng....</p>
                         <div>         
                             <label>iPhone - iOS</label>
                         </div>
                     </a>
                 </li>
+                <li>
+                  <a href="#####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png">
+                      <h5>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h5>
+                      <p>Đặt mật khẩu là một trong những bước đầu tiên để tạo tài khoản Gmail và vì một vài lý do mà bạn muốn thay đổi nó....</p>
+                      <div>     
+                          <label>iphone/ oppo / SamSung</label>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                <a href="#####">
+                    <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png">
+                    <h5>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h5>
+                    <p>Đặt mật khẩu là một trong những bước đầu tiên để tạo tài khoản Gmail và vì một vài lý do mà bạn muốn thay đổi nó....</p>
+                    <div>     
+                        <label>iphone/ oppo / SamSung</label>
+                    </div>
+                </a>
+            </li>
+            
             </ul>
+            <ul class="listask" id="more" style="display: none;">
+              <li>
+                  <a href="#####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png">
+                      <h5>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h5>
+                      <p>Đặt mật khẩu là một trong những bước đầu tiên để tạo tài khoản Gmail và vì một vài lý do mà bạn muốn thay đổi nó....</p>
+                      <div>     
+                          <label>iphone/ oppo / SamSung</label>
+                      </div>
+                  </a>
+              </li>
+              <li> 
+                  <a href="#####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/929045/Thumbnail/khac-phuc-loi-Bluetooth-tren-window10-0.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/929045/Thumbnail/khac-phuc-loi-Bluetooth-tren-window10-0.jpg">
+                      <h5>Cách bật, tắt Bluetooth trên máy tính Windows đơn giản, nhanh chóng</h5>
+                      <p>Bluetooth là tính năng được tích hợp sẵn trên các  laptop  giúp bạn có thể truyền file nhanh chóng từ điện thoại hay...</p>
+                      <div>  
+                          <label>iphone/ OPPO / SamSung</label>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                <a href="#####">
+                    <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279560/Thumbnail/huong-dan-cach-doi-mat-khau-khoi-phuc-mat-khau-gmail-tren-thumb.png">
+                    <h5>Hướng dẫn cách đổi mật khẩu, khôi phục mật khẩu Gmail trên điện thoại</h5>
+                    <p>Đặt mật khẩu là một trong những bước đầu tiên để tạo tài khoản Gmail và vì một vài lý do mà bạn muốn thay đổi nó....</p>
+                    <div>     
+                        <label>iphone/ oppo / SamSung</label>
+                    </div>
+                </a>
+            </li>
+              <li> 
+                  <a href="#####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1283689/Thumbnail/huong-dan-cach-ket-noi-oppo-watch-series-voi-dien-thoai-thumb.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1283689/Thumbnail/huong-dan-cach-ket-noi-oppo-watch-series-voi-dien-thoai-thumb.jpg">
+                      <h5>Hướng dẫn cách kết nối OPPO Watch Series với điện thoại Android, iOS</h5>
+                      <p>Từ khi OPPO Watch được chính thức ra mắt tại Việt Nam đã thu hút rất nhiều sự quan tâm của các tín đồ công nghệ. Nếu...</p>
+                      <div>   
+                          <label>Đồng hồ thời trang</label>
+                      </div>
+                  </a>
+              </li>
+              <li>  
+                  <a href="#####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1279535/Thumbnail/cach-chup-man-hinh-iphone-day-du-model-nhanh-chong-de-lam-thumb-1.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1279535/Thumbnail/cach-chup-man-hinh-iphone-day-du-model-nhanh-chong-de-lam-thumb-1.jpg">
+                      <h5>Cách chụp màn hình iPhone: Đầy đủ model, nhanh chóng dễ làm</h5>
+                      <p>Tính năng chụp màn hình cực kỳ hữu dụng đối với người dùng  điện thoại  bởi sự tiện lợi mà nó mang lại. Trong bài...</p>
+                      <div>                         
+                          <label>iPhone - iOS</label>
+                      </div>
+                  </a>
+              </li>
+              <li>      
+                  <a href="####">
+                      <img class=" lazyloaded" data-original="https://cdn.tgdd.vn/hoi-dap/1282403/Thumbnail/cach-bat-tat-phan-chieu-man-hinh-iphone-len-tivi-nhanh-thumb-1.jpg" width="95" alt="" src="https://cdn.tgdd.vn/hoi-dap/1282403/Thumbnail/cach-bat-tat-phan-chieu-man-hinh-iphone-len-tivi-nhanh-thumb-1.jpg">
+                      <h5>Cách bật, tắt phản chiếu màn hình iPhone lên tivi nhanh chóng nhất</h5>
+                      <p>Tính năng phản chiếu màn hình  iPhone  lên tivi giúp bạn có thể xem phim, video,... trên tivi một cách dễ dàng....</p>
+                      <div>         
+                          <label>iPhone - iOS</label>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+            
                   <a href="#####"  id="morelist" class="viewmore">Xem thêm</a>
         </div>
         </aside>
@@ -329,133 +440,124 @@
         <div class="banner">
             <a aria-label="slide" data-cate="0" data-place="1173" href="https://www.thegioididong.com/oneplus-nord-5g?itm_source=hoi_dap&amp;itm_medium=banner&amp;itm_content=2" onclick="jQuery.ajax({ url: 'https://www.thegioididong.com/bannertracking?bid=37443&amp;r='+ (new Date).getTime(), async: true, cache: false });"><img style="cursor:pointer" src="https://cdn.tgdd.vn/2020/08/banner/300x90-300x90-3.png" alt="Hotsale cuối tuần" width="300" height="90"></a>
         <a aria-label="slide" data-cate="0" data-place="1173" href="https://www.thegioididong.com/dtdd/realme-c12?Clearcache=1?itm_source=hoi_dap&amp;itm_medium=banner&amp;itm_content=2" onclick="jQuery.ajax({ url: 'https://www.thegioididong.com/bannertracking?bid=37223&amp;r='+ (new Date).getTime(), async: true, cache: false });"><img style="cursor:pointer" src="https://cdn.tgdd.vn/2020/08/banner/300x90-300x90-2.png" alt="Săn Deal Hết Tháng 7" width="300" height="90"></a></div>
-                <div class="hotweek">
-                <h4>BÀI NỔI BẬT</h4>
-                    <a href="####" class="first-child">
-                        <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1273240/Thumbnail/3-cach-khac-phuc-loi-no-internet-access-tren-windows-10-thumb-1.jpg">
-                        <h3>3 cách khắc phục lỗi No Internet Access trên Windows 10 nhanh nhất
-                                <span class="ncom"><i class="iconask-com"></i>1</span>
-                        </h3>
-                    </a>
+                <div class="hotweek" >
+                  <h4>BÀI NỔI BẬT</h4>
                     <a href="####" class="">
                         <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1268933/Thumbnail/ios-14-va-5-tinh-nang-moi-thu-vi-khong-the-bo-qua-tren-thumb-1.jpg">
-                        <h3>iOS 14 và 5 tính năng mới thú vị, không thể bỏ qua trên iPhone
-                        </h3>
+                        <p>iOS 14 và 5 tính năng mới thú vị, không thể bỏ qua trên iPhone </p>>
                     </a>
                     <a href="####" class="">
                         <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1249784/Thumbnail/so-sanh-iphone-se-2020-voi-iphone-6-day-la-5-ly-do-ban-nen-Thumb.jpg">
-                        <h3>So sánh iPhone SE 2020 với iPhone 6: Đây là 5 lý do bạn nên nâng cấp!
-                                <span class="ncom"><i class="iconask-com"></i>3</span>
-                        </h3>
+                        <p>So sánh iPhone SE 2020 với iPhone 6: Đây là 5 lý do bạn nên nâng cấp!
+                          <span class="ncom"><i class="iconask-com"></i>3</span>
+                        </p>
                     </a>
                     <a href="####" class="">
                         <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1249681/Thumbnail/so-sanh-iphone-se-2020-va-iphone-11-dieu-gi-lam-nen-su-thb.jpg">
-                        <h3>iPhone SE 2020 và iPhone 11: Điều gì làm nên sự khác biệt?
-                                <span class="ncom"><i class="iconask-com"></i>1</span>
-                        </h3>
+                        <p>iPhone SE 2020 và iPhone 11: Điều gì làm nên sự khác biệt?
+                          <span class="ncom"><i class="iconask-com"></i>1</span>
+                        </p>
                     </a>
                     <a href="####" class="">
                         <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1241243/Thumbnail/hd-he-dieu-hanh-tren-smartwatch-0.jpg">
-                        <h3>Smartwatch có những hệ điều hành nào?
-                        </h3>
+                        <p>Smartwatch có những hệ điều hành nào?</p>
                     </a>
                     <a href="####" class="">
                         <img width="125" height="70" src="https://cdn.tgdd.vn/hoi-dap/1240008/Thumbnail/viettel-multisim-la-gi-cach-dang-ky-nhu-the-nao-co-ton-phi-thumb-1.jpg">
-                        <h3>Viettel MultiSIM là gì? Cách đăng ký như thế nào? Có tốn phí không?
-                        </h3>
+                    <p>Viettel MultiSIM là gì? Cách đăng ký như thế nào? Có tốn phí không?</p>
                     </a>
             </div>
-        
         </aside>
       </div>
-     <div class="container-fluid my-3">
-		<div class="row text-center bg-primary py-4">
-			<div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
-				<i class="fa fa-download text-white fa-2x"></i>
-				<span class="h4 text-white"> Tải xuống ứng dụng của chúng tôi và nhận thêm mã giảm giá đối với tất cả các sản phẩm </span>
-				<a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
-			</div>
-		</div>
-	</div>
+    <div class="container-fluid my-3">
+      <div class="row text-center bg-primary py-4">
+        <div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
+          <i class="fa fa-download text-white fa-2x"></i>
+          <span class="h4 text-white"> Tải xuống ứng dụng của chúng tôi và nhận thêm mã giảm giá đối với tất cả các sản phẩm </span>
+          <a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
+        </div>
+      </div>
+</div>
 
-	<div class="container my-3">
-		<div class="row">
-			<div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
-				<div class="small-box">
-				    <strong>Laptops :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
-				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
-				</div>
-				<div class="small-box">
-				    <strong>Mobiles :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
-				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
-				</div>
-				<div class="small-box">
-				    <strong>Computers :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
-				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
-				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
-				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container my-3">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
-				<h6> Phản hồi</h6>
-				<hr>
-				<form class="border py-3 px-3">
-					<div class="form-row align-items-center">
-				    <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
-				      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Họ tên ...">
-				    </div>
-				    <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
-				      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Email...">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				   	<textarea name="message" class="form-control" placeholder=" Nhập phản hồi "></textarea>
-				  </div>
-				  <button type="submit" class="btn btn-primary btn-block">Gửi</button>
-				</form> 
-			</div>
-			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
-				<h6> Địa chỉ của chúng tôi</h6>
-				<hr>
-				<p>
-					Trung Tâm Tin Học ĐH Khoa học Tự Nhiên
-					<br><br>
-					128A, Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội
-					<br>
-					
-				</p>
-			</div>
-			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
-				<h6>Our social</h6>
-				<hr>
-				<i class="fa fa-facebook-square fa-3x"></i>
-				<i class="fa fa-linkedin-square fa-3x"></i>
-				<i class="fa fa-twitter-square fa-3x"></i>
-				<i class="fa fa-youtube-square fa-3x"></i>
-				<p class="mt-2">
-					Trải nghiệm mua hàng tốt nhất !
-				</p>
-			</div>
-		</div>
-	</div>
+<div class="container my-3" >
+  <div class="row">
+    <div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
+      <div class="small-box">
+          <strong>Laptops :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+          <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+      </div>
+      <div class="small-box">
+          <strong>Mobiles :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+          <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+      </div>
+      <div class="small-box">
+          <strong>Computers :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+          <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+          <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+          <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-3">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+      <h6> Phản hồi</h6>
+      <hr>
+      <form class="border py-3 px-3">
+        <div class="form-row align-items-center">
+          <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Họ tên ...">
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Email...">
+          </div>
+        </div>
+        <div class="form-group">
+           <textarea name="message" class="form-control" placeholder=" Nhập phản hồi "></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Gửi</button>
+      </form> 
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+      <h6> Địa chỉ của chúng tôi</h6>
+      <hr>
+      <p>
+        Trung Tâm Tin Học ĐH Khoa học Tự Nhiên
+        <br><br>
+        128A, Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội
+        <br>
+        
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+      <h6>Our social</h6>
+      <hr>
+      <i class="fa fa-facebook-square fa-3x"></i>
+      <i class="fa fa-linkedin-square fa-3x"></i>
+      <i class="fa fa-twitter-square fa-3x"></i>
+      <i class="fa fa-youtube-square fa-3x"></i>
+      <p class="mt-2">
+        Trải nghiệm mua hàng tốt nhất !
+      </p>
+    </div>
+  </div>
+</div>
+
 	<footer class="container-fluid bg-primary py-3">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<p class="text-center text-white pt-3">© 2019 |   All Rights Reserved |   www.MyPhone.com  |   Email us:MyPhoneT3H@gmail.com</p>
+				<p class="text-center text-white pt-3">© 2020 |   All Rights Reserved |   www.MyPhone.com  |   Email us:MyPhoneT3H@gmail.com</p>
 			</div>
 		</div>
 	</footer>

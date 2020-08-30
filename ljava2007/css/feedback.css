@@ -52,7 +52,7 @@
     text-align: center;
     box-sizing: border-box;
 } .search form {
-    float: right;
+    
     display: inline-block;
     padding: 0;
     position: relative;
@@ -113,6 +113,7 @@
     box-sizing: border-box;
     width: 49%;
     float: right;
+    
 }     
 .if a{
     background: #288ad6;
@@ -122,7 +123,7 @@
     font-size: 14px;
     color: #fff;
     padding: 9px 0;
-    margin: 5px 0;
+    margin: 5px ;
     width: 46%;
     box-sizing: border-box;
     display: inline-block;
@@ -131,7 +132,7 @@
 
 
 .search {
-    float: left;
+    
     overflow: hidden;
     display: inline-block;
     width: 100%;
@@ -214,4 +215,68 @@
 a:hover{
     background-color: #a8a8a8;
     border-radius: 5px;
+}    
+.topbarask {
+    display: block;
+    height: 100px;
+    background: #fff;
+    padding: 10px 0;
 }
+.topbarask h1 {
+    float: left;
+    overflow: hidden;
+    line-height: 40px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.area_user {
+    float: right;
+    
+    height: 20px;
+    padding: 10px 0;
+    position: relative;
+}
+.loginwith .fb {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 12px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background: blue;
+}
+.loginwith .gp {
+    display: block;
+    overflow: hidden;
+    padding: 12px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background:red;
+}
+.loginwith p {
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+}           
+.loginwith {
+    display: none;
+    overflow: visible;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 9;
+    padding: 10px;
+    width: 280px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 10p;
+}    
