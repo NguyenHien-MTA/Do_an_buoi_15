@@ -63,10 +63,20 @@ $(document).ready(function(){
     // đặt sự kiện cho  xem thêm của phần hỏi đáp
     $("#morelist").on("click",function(){
         $("#more").show()
-        $("#Rep").css("height","2500px")
+        $('#morelist').css('display','none')
+        $('#listmore').css("display",'block')
+        // $("#Rep").css("height","2500px")
 
     })
-    // hàm kiểm tra xem email có đúng với mẫu không
+    $('#listmore').on('click',function(){
+        $('#morethan').show()
+        $('#listmore').css('display','none')
+        $('#listmore').css('display','block')
+    })
+    $('#listmore1').on('click',function(){
+        $('#morethan1').show()
+    })
+       // hàm kiểm tra xem email có đúng với mẫu không
     function isEmail(emailStr)
             {
                     var regexEmail=/^(.+)@gmail.com$/              
@@ -146,15 +156,16 @@ $(document).ready(function(){
     }
     
     document.getElementById("submit").addEventListener("click",validate)
-    
-     $(".login").on('click',function(){
-         $('.loginwith').css('display','none')
-
-     })
 
      $('.area_input').on("click",function(){
         $('.loginwith').show()
+        $('.login').show()
      })
+     $(".login").on('click',function(){
+        $('.loginwith').css('display','none')
+        $('.login').css('display','none')
+
+    })
      $('.fb').on('click',function(){
         location.assign("https://www.facebook.com/");
      })
